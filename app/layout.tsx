@@ -21,6 +21,27 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image", title: "1nx — One idea. N executions.", description },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": `${SITE_URL}#org`,
+      name: "1nx",
+      url: SITE_URL,
+      slogan: "One idea. N executions.",
+      description,
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${SITE_URL}#site`,
+      url: SITE_URL,
+      name: "1nx",
+      publisher: { "@id": `${SITE_URL}#org` },
+    },
+  ],
+};
+
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
@@ -33,6 +54,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         />
       </head>
       <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <SmoothScroll>{children}</SmoothScroll>
       </body>
     </html>
