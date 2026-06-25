@@ -1,0 +1,76 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--cyan:#0E7490;--cyan2:#0891B2;--cyan3:#22D3EE;--ink:#0A0A0B}
+  html,body{margin:0;background:#fff;font-family:'Space Grotesk',sans-serif}
+  .sheet{width:980px;padding:40px 50px}
+  .label{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#9CA3AF;font-weight:600;margin:0 0 18px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .card{border:1px solid #E6E8EB;border-radius:14px;height:200px;display:flex;align-items:center;justify-content:center;gap:26px}
+  .card.dark{background:var(--ink);border-color:#1b1b1f}
+  .wm{font-weight:700;font-size:58px;line-height:1;letter-spacing:-.02em}
+  .wm .one{color:var(--ink)} .wm .nx{color:var(--cyan)}
+  .dark .wm .one{color:#fff} .dark .wm .nx{color:var(--cyan3)}
+  .cap{font-size:12px;color:#9CA3AF;margin:22px 0 6px;letter-spacing:.04em}
+</style></head><body>
+<div class="sheet">
+  <p class="label">1nx · refined — Concept B (Fan 1 → N)</p>
+
+  <div class="grid">
+    <!-- white lockup -->
+    <div class="card">
+      <svg width="74" height="74" viewBox="0 0 48 48" fill="none">
+        <g stroke-linecap="round" stroke-width="2.5">
+          <path d="M12 24 L35 11" stroke="#0E7490"/>
+          <path d="M12 24 L35 24" stroke="#0891B2"/>
+          <path d="M12 24 L35 37" stroke="#22D3EE"/>
+        </g>
+        <circle cx="11" cy="24" r="3.8" fill="#0E7490"/>
+        <circle cx="36" cy="11" r="3" fill="#0E7490"/>
+        <circle cx="36" cy="24" r="3" fill="#0891B2"/>
+        <circle cx="36" cy="37" r="3" fill="#22D3EE"/>
+      </svg>
+      <span class="wm"><span class="one">1</span><span class="nx">nx</span></span>
+    </div>
+    <!-- white icon tile -->
+    <div class="card">
+      <svg width="120" height="120" viewBox="0 0 48 48">
+        <rect x="2" y="2" width="44" height="44" rx="12" fill="#0E7490"/>
+        <g stroke-linecap="round" stroke-width="2.5" fill="none" opacity=".95">
+          <path d="M13 24 L34 12" stroke="#fff"/><path d="M13 24 L34 24" stroke="#fff"/><path d="M13 24 L34 36" stroke="#fff"/>
+        </g>
+        <circle cx="12" cy="24" r="3.6" fill="#fff"/>
+        <circle cx="35" cy="12" r="2.8" fill="#fff"/><circle cx="35" cy="24" r="2.8" fill="#fff"/><circle cx="35" cy="36" r="2.8" fill="#fff"/>
+      </svg>
+    </div>
+
+    <!-- black lockup -->
+    <div class="card dark">
+      <svg width="74" height="74" viewBox="0 0 48 48" fill="none">
+        <g stroke-linecap="round" stroke-width="2.5">
+          <path d="M12 24 L35 11" stroke="#0891B2"/>
+          <path d="M12 24 L35 24" stroke="#22D3EE"/>
+          <path d="M12 24 L35 37" stroke="#67E8F9"/>
+        </g>
+        <circle cx="11" cy="24" r="3.8" fill="#0891B2"/>
+        <circle cx="36" cy="11" r="3" fill="#0891B2"/>
+        <circle cx="36" cy="24" r="3" fill="#22D3EE"/>
+        <circle cx="36" cy="37" r="3" fill="#67E8F9"/>
+      </svg>
+      <span class="wm"><span class="one">1</span><span class="nx">nx</span></span>
+    </div>
+    <!-- black icon tile -->
+    <div class="card dark">
+      <svg width="120" height="120" viewBox="0 0 48 48">
+        <rect x="2" y="2" width="44" height="44" rx="12" fill="#0A0A0B" stroke="#0891B2" stroke-width="1.5"/>
+        <g stroke-linecap="round" stroke-width="2.5" fill="none">
+          <path d="M13 24 L34 12" stroke="#0891B2"/><path d="M13 24 L34 24" stroke="#22D3EE"/><path d="M13 24 L34 36" stroke="#67E8F9"/>
+        </g>
+        <circle cx="12" cy="24" r="3.6" fill="#0891B2"/>
+        <circle cx="35" cy="12" r="2.8" fill="#0891B2"/><circle cx="35" cy="24" r="2.8" fill="#22D3EE"/><circle cx="35" cy="36" r="2.8" fill="#67E8F9"/>
+      </svg>
+    </div>
+  </div>
+  <p class="cap">Horizontal lockup + app-icon tile · the 3 endpoints graduate cyan→bright (depth + motion cue). The fan animates in the hero: 1 node bursts into N.</p>
+</div>
+</body></html>
