@@ -4,14 +4,15 @@ import HomeContent from "@/components/pages/HomeContent";
 
 export const metadata: Metadata = {
   alternates: {
-    canonical: "/",
+    canonical: "/id",
     languages: { en: "/", id: "/id", "x-default": "/" },
   },
+  openGraph: { locale: "id_ID" },
 };
 
-export default function Home() {
+export default function HomeId() {
   return (
-    <LocaleShell locale="en">
+    <LocaleShell locale="id">
       <HomeContent />
     </LocaleShell>
   );
