@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { SITE_URL } from "@/lib/site";
+import SmoothScroll from "@/components/motion/SmoothScroll";
 
 const description =
   "AI-enabled solutions, digital transformation and automation for the enterprise. One idea. N executions.";
@@ -31,7 +32,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           rel="stylesheet"
         />
       </head>
-      <body>{children}</body>
+      <body>
+        <SmoothScroll>{children}</SmoothScroll>
+      </body>
     </html>
   );
 }
