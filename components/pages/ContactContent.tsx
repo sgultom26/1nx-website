@@ -10,7 +10,7 @@ import { useI18n } from "@/lib/i18n";
 type Status = "idle" | "sending" | "success" | "error";
 
 const inputCls =
-  "w-full rounded-[4px] border border-[var(--hair-strong)] bg-white px-3.5 py-2.5 text-sm text-fg placeholder:text-faint focus:border-accent focus:outline-none";
+  "w-full rounded-[4px] border border-[var(--hair-strong)] bg-[var(--color-bg-soft)] px-3.5 py-2.5 text-sm text-fg placeholder:text-faint focus:border-white focus:outline-none";
 
 export default function ContactContent() {
   const { t } = useI18n();
@@ -63,7 +63,7 @@ export default function ContactContent() {
             <div className="card card-accent p-6 sm:p-8">
               {status === "success" ? (
                 <div className="flex flex-col items-center py-10 text-center">
-                  <span className="flex h-14 w-14 items-center justify-center rounded-full bg-accent text-white">
+                  <span className="flex h-14 w-14 items-center justify-center rounded-full bg-white text-black">
                     <Check size={26} strokeWidth={2.6} />
                   </span>
                   <h2 className="mt-5 text-xl font-semibold text-fg">{f.successTitle}</h2>
@@ -109,7 +109,7 @@ export default function ContactContent() {
                     <textarea rows={4} className={`mt-1.5 resize-y ${inputCls}`} value={form.message} onChange={set("message")} placeholder={f.messagePh} required />
                   </label>
 
-                  {status === "error" && <p className="text-sm text-[#e5484d]">{f.error}</p>}
+                  {status === "error" && <p className="text-sm font-medium text-fg underline">{f.error}</p>}
 
                   <button type="submit" disabled={!valid || status === "sending"} className="btn btn-primary w-full disabled:cursor-not-allowed disabled:opacity-55">
                     {status === "sending" ? f.sending : f.submit}

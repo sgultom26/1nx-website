@@ -20,11 +20,11 @@ function Edge({ p, i }: { p: MotionValue<number>; i: number }) {
         y1={230}
         x2={860}
         y2={y}
-        stroke="#0E7490"
+        stroke="rgba(255,255,255,0.6)"
         strokeWidth={1.6}
         style={{ pathLength: len, opacity: op }}
       />
-      <motion.circle cx={860} cy={y} r={6} fill="#0891B2" style={{ opacity: op }} />
+      <motion.circle cx={860} cy={y} r={6} fill="#ffffff" style={{ opacity: op }} />
     </>
   );
 }
@@ -54,8 +54,8 @@ function Scene({ p }: { p: MotionValue<number> }) {
         {Array.from({ length: TOTAL }).map((_, i) => (
           <Edge key={i} p={p} i={i} />
         ))}
-        <circle cx="140" cy="230" r="12" fill="#0E7490" />
-        <circle cx="140" cy="230" r="21" fill="none" stroke="#0E7490" strokeWidth="1.5" opacity="0.5" />
+        <circle cx="140" cy="230" r="12" fill="#ffffff" />
+        <circle cx="140" cy="230" r="21" fill="none" stroke="rgba(255,255,255,0.4)" strokeWidth="1.5" />
       </svg>
 
       <div className="mx-auto mt-3 flex max-w-4xl justify-between px-2 font-mono text-xs uppercase tracking-wider">

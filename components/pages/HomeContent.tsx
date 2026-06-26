@@ -33,17 +33,17 @@ export default function HomeContent() {
 
   return (
     <>
-      {/* ===== HERO (cinematic / black, full-bleed canvas) ===== */}
-      <section className="section-dark relative min-h-[92vh] overflow-hidden">
+      {/* ===== HERO (full-screen, edge-to-edge, no nav) ===== */}
+      <section className="section-dark relative min-h-screen overflow-hidden">
         <HeroBurst className="pointer-events-none absolute inset-0 h-full w-full" />
         <div
           className="pointer-events-none absolute inset-0"
           style={{
             background:
-              "linear-gradient(90deg,#0a0a0b 0%, rgba(10,10,11,0.86) 40%, rgba(10,10,11,0.25) 72%, rgba(10,10,11,0.55) 100%)",
+              "linear-gradient(90deg,#050506 0%, rgba(5,5,6,0.86) 40%, rgba(5,5,6,0.25) 72%, rgba(5,5,6,0.6) 100%)",
           }}
         />
-        <Container className="relative z-10 flex min-h-[92vh] items-center py-20">
+        <Container className="relative z-10 flex min-h-screen items-center py-20">
           <div className="max-w-2xl">
             <Reveal>
               <Eyebrow noRule>{t.hero.eyebrow}</Eyebrow>

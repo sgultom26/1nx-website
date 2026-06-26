@@ -42,14 +42,14 @@ export default function CompanyContent() {
             <Reveal delay={0.1}>
               <div className="card p-8">
                 <svg viewBox="0 0 320 200" className="w-full" aria-hidden>
-                  <g stroke="#0E7490" strokeWidth="1.6" opacity="0.7">
+                  <g stroke="rgba(255,255,255,0.5)" strokeWidth="1.6">
                     {Array.from({ length: 7 }).map((_, i) => (
                       <line key={i} x1="20" y1="100" x2="300" y2={20 + i * 27} />
                     ))}
                   </g>
-                  <circle cx="20" cy="100" r="9" fill="#0E7490" />
+                  <circle cx="20" cy="100" r="9" fill="#ffffff" />
                   {Array.from({ length: 7 }).map((_, i) => (
-                    <circle key={i} cx="300" cy={20 + i * 27} r="5" fill="#0891B2" />
+                    <circle key={i} cx="300" cy={20 + i * 27} r="5" fill="#ffffff" />
                   ))}
                 </svg>
               </div>

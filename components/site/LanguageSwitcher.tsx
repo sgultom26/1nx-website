@@ -42,7 +42,7 @@ export default function LanguageSwitcher({ className }: { className?: string }) 
             onClick={() => go(o.code)}
             aria-pressed={active}
             className={`rounded-[3px] px-2 py-1 font-mono text-[11px] tracking-wide transition-colors ${
-              active ? "bg-accent text-white" : "text-muted hover:text-fg"
+              active ? "bg-white text-black" : "text-muted hover:text-fg"
             }`}
           >
             {o.label}
