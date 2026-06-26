@@ -1,5 +1,6 @@
 "use client";
 
+import { ArrowUpRight } from "lucide-react";
 import Container from "@/components/ui/Container";
 import Reveal, { Stagger, StaggerItem } from "@/components/ui/Reveal";
 import Eyebrow from "@/components/ui/Eyebrow";
@@ -92,9 +93,13 @@ export default function CompanyContent() {
                   href={fam.href}
                   target={fam.href.startsWith("http") ? "_blank" : undefined}
                   rel="noopener"
-                  className="card card-hover block h-full p-6"
+                  className="card card-hover group block h-full p-6"
                 >
-                  <div className="font-display text-lg font-semibold text-fg">{fam.name}</div>
+                  <div className="flex items-center justify-between">
+                    <span className="mono-label">{t.family.tag}</span>
+                    <ArrowUpRight size={15} className="text-faint transition-colors group-hover:text-fg" />
+                  </div>
+                  <div className="mt-4 font-display text-lg font-semibold text-fg">{fam.name}</div>
                   <p className="mt-2 text-[13px] leading-relaxed text-muted">{fam.blurb}</p>
                 </a>
               </StaggerItem>

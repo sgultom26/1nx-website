@@ -206,9 +206,13 @@ export default function HomeContent() {
                   href={f.href}
                   target={f.href.startsWith("http") ? "_blank" : undefined}
                   rel="noopener"
-                  className="card card-hover block h-full p-6"
+                  className="card card-hover group block h-full p-6"
                 >
-                  <div className="font-display text-lg font-semibold text-fg">{f.name}</div>
+                  <div className="flex items-center justify-between">
+                    <span className="mono-label">{t.family.tag}</span>
+                    <ArrowUpRight size={15} className="text-faint transition-colors group-hover:text-fg" />
+                  </div>
+                  <div className="mt-4 font-display text-lg font-semibold text-fg">{f.name}</div>
                   <p className="mt-2 text-[13px] leading-relaxed text-muted">{f.blurb}</p>
                 </a>
               </StaggerItem>

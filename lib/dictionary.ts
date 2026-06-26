@@ -2,7 +2,7 @@ export type Locale = "en" | "id";
 
 const en = {
   common: {
-    startProject: "Start a project",
+    startProject: "Bring an idea",
     seeSolutions: "Explore solutions",
     talkToUs: "Talk to us",
     readMore: "Read more",
@@ -18,7 +18,7 @@ const en = {
     slogan: "One idea. N executions.",
     subcopy:
       "1nx turns a single idea into many engineered executions — AI-enabled solutions, digital transformation and automation, delivered for the enterprise.",
-    ctaPrimary: "Start a project",
+    ctaPrimary: "Bring us an idea",
     ctaSecondary: "Explore solutions",
     scrollCue: "Scroll to see how",
   },
@@ -114,16 +114,17 @@ const en = {
     ],
   },
   family: {
-    eyebrow: "The 1nx family",
-    titleA: "One company, ",
-    titleAccent: "many products.",
-    subtitle: "1nx builds and operates a family of products on the same execution engine.",
+    eyebrow: "Products & services",
+    titleA: "Innovation, ",
+    titleAccent: "shipped as products.",
+    subtitle: "1nx builds and operates a family of products and services on one execution engine.",
+    tag: "Product",
   },
   cta: {
     titleA: "Bring us one idea. ",
     titleAccent: "We'll engineer the executions.",
     subcopy: "Tell us the outcome you need. We'll come back with an execution plan, not a sales deck.",
-    button: "Start a project",
+    button: "Bring us an idea",
   },
   footer: {
     tagline: "AI-enabled solutions, digital transformation and automation for the enterprise. ",
@@ -147,7 +148,7 @@ const en = {
         ],
       },
       {
-        title: "Family",
+        title: "Products",
         links: [
           { label: "1pay2link", href: "https://1pay2link.com" },
           { label: "1ncall", href: "https://1ncall.com" },
@@ -253,7 +254,7 @@ export type Dict = typeof en;
 
 const id: Dict = {
   common: {
-    startProject: "Mulai proyek",
+    startProject: "Bawa satu ide",
     seeSolutions: "Lihat solusi",
     talkToUs: "Hubungi kami",
     readMore: "Selengkapnya",
@@ -269,7 +270,7 @@ const id: Dict = {
     slogan: "Satu ide. N eksekusi.",
     subcopy:
       "1nx mengubah satu ide menjadi banyak eksekusi yang terrekayasa — solusi berbasis AI, transformasi digital, dan otomasi, untuk skala enterprise.",
-    ctaPrimary: "Mulai proyek",
+    ctaPrimary: "Bawa satu ide ke kami",
     ctaSecondary: "Lihat solusi",
     scrollCue: "Gulir untuk melihat caranya",
   },
@@ -364,16 +365,17 @@ const id: Dict = {
     ],
   },
   family: {
-    eyebrow: "Keluarga 1nx",
-    titleA: "Satu perusahaan, ",
-    titleAccent: "banyak produk.",
-    subtitle: "1nx membangun dan mengoperasikan keluarga produk di atas mesin eksekusi yang sama.",
+    eyebrow: "Produk & layanan",
+    titleA: "Inovasi, ",
+    titleAccent: "dikirim sebagai produk.",
+    subtitle: "1nx membangun dan mengoperasikan keluarga produk dan layanan di atas satu mesin eksekusi.",
+    tag: "Produk",
   },
   cta: {
     titleA: "Bawa satu ide. ",
     titleAccent: "Kami rekayasa eksekusinya.",
     subcopy: "Sampaikan hasil yang Anda butuhkan. Kami kembali dengan rencana eksekusi, bukan deck penjualan.",
-    button: "Mulai proyek",
+    button: "Bawa satu ide ke kami",
   },
   footer: {
     tagline: "Solusi berbasis AI, transformasi digital, dan otomasi untuk enterprise. ",
@@ -397,7 +399,7 @@ const id: Dict = {
         ],
       },
       {
-        title: "Keluarga",
+        title: "Produk",
         links: [
           { label: "1pay2link", href: "https://1pay2link.com" },
           { label: "1ncall", href: "https://1ncall.com" },
