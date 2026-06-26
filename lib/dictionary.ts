@@ -105,13 +105,13 @@ const en = {
     ],
   },
   impact: {
-    eyebrow: "Impact",
-    title: "Built to move the numbers that matter.",
-    note: "Indicative outcomes — calibrated per engagement, not guarantees.",
+    eyebrow: "How we operate",
+    title: "Built to execute, not to advise.",
+    note: "We're accountable to the outcome you need — and we operate what we build.",
     stats: [
-      { k: "N×", v: "faster delivery from idea to production" },
-      { k: "60%+", v: "manual workflow effort automated" },
-      { k: "1", v: "accountable partner across strategy, build and run" },
+      { k: "1 team", v: "Strategy, build and run — one accountable team, end to end." },
+      { k: "Prod-first", v: "Strategy only counts once it's running in production and measured." },
+      { k: "AI-native", v: "Agents, RAG and automation built into the execution, not bolted on." },
     ],
   },
   family: {
@@ -414,13 +414,13 @@ const id: Dict = {
     ],
   },
   impact: {
-    eyebrow: "Dampak",
-    title: "Dibangun untuk menggerakkan angka yang penting.",
-    note: "Hasil indikatif — dikalibrasi per engagement, bukan jaminan.",
+    eyebrow: "Cara kami beroperasi",
+    title: "Dibangun untuk eksekusi, bukan sekadar nasihat.",
+    note: "Kami bertanggung jawab atas hasil yang Anda butuhkan — dan kami mengoperasikan yang kami bangun.",
     stats: [
-      { k: "N×", v: "lebih cepat dari ide ke produksi" },
-      { k: "60%+", v: "upaya workflow manual terotomasi" },
-      { k: "1", v: "mitra yang bertanggung jawab lintas strategi, build, dan run" },
+      { k: "1 tim", v: "Strategi, build, dan run — satu tim yang bertanggung jawab, ujung ke ujung." },
+      { k: "Prod-first", v: "Strategi baru berarti saat berjalan di produksi dan terukur." },
+      { k: "AI-native", v: "Agent, RAG, dan otomasi menyatu dalam eksekusi, bukan tempelan." },
     ],
   },
   family: {
