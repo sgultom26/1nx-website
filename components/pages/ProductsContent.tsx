@@ -46,7 +46,9 @@ export default function ProductsContent() {
       </section>
 
       {/* one full-screen section per product */}
-      {FAMILY.map((f, i) => (
+      {FAMILY.map((f, i) => {
+        const d = t.family.items[i];
+        return (
         <section
           key={f.name}
           id={f.name}
@@ -55,14 +57,14 @@ export default function ProductsContent() {
           <Container>
             <div className="grid items-center gap-12 lg:grid-cols-2">
               <Reveal className={i % 2 ? "lg:order-2" : ""}>
-                <div className="mono-label">{f.category}</div>
+                <div className="mono-label">{d.category}</div>
                 <h2 className="mt-3 font-display text-[clamp(2rem,4vw,3rem)] font-semibold text-fg">
                   {f.name}
                 </h2>
-                <p className="mt-4 max-w-md leading-relaxed text-muted">{f.long}</p>
+                <p className="mt-4 max-w-md leading-relaxed text-muted">{d.long}</p>
                 <div className="mono-label mt-7">{pp.capabilitiesLabel}</div>
                 <ul className="mt-3 grid gap-2.5 sm:grid-cols-2">
-                  {f.points.map((pt) => (
+                  {d.points.map((pt) => (
                     <li key={pt} className="flex gap-2.5 text-sm text-muted">
                       <Check size={16} strokeWidth={2.5} className="mt-0.5 flex-none text-fg" />
                       {pt}
@@ -81,7 +83,8 @@ export default function ProductsContent() {
             </div>
           </Container>
         </section>
-      ))}
+        );
+      })}
     </>
   );
 }

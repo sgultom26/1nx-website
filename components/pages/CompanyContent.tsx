@@ -87,9 +87,9 @@ export default function CompanyContent() {
             subtitle={t.family.subtitle}
           />
           <Stagger className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-            {FAMILY.map((fam) => (
+            {FAMILY.map((fam, i) => (
               <StaggerItem key={fam.name}>
-                <ProductCard name={fam.name} blurb={fam.blurb} href={fam.href} tag={t.family.tag} />
+                <ProductCard name={fam.name} blurb={t.family.items[i].blurb} href={fam.href} tag={t.family.tag} />
               </StaggerItem>
             ))}
           </Stagger>

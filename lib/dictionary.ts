@@ -120,6 +120,52 @@ const en = {
     titleAccent: "shipped as products.",
     subtitle: "1nx builds and operates a family of products and services on one execution engine.",
     tag: "Product",
+    items: [
+      {
+        category: "Payments",
+        blurb: "Payment orchestration — one integration, every gateway.",
+        long: "The orchestration layer over Indonesia's payment gateways. Integrate once, accept every method — QRIS, virtual accounts, e-wallets, cards and PayLater — and route across providers for uptime and coverage. Money settles straight to you.",
+        points: [
+          "One API, every gateway",
+          "QRIS · VA · e-wallets · cards · PayLater",
+          "Health-aware routing & failover",
+          "Funds settle straight to you",
+        ],
+      },
+      {
+        category: "Messaging & automation",
+        blurb: "Workflow automation + omnichannel messaging, AI-enabled.",
+        long: "AI-enabled workflow automation and omnichannel messaging. Orchestrate customer conversations across WhatsApp, SMS and voice, with visual automations, campaigns and AI-assisted replies and routing.",
+        points: [
+          "Omnichannel: WhatsApp · SMS · voice",
+          "Visual workflow automation",
+          "AI-assisted replies & routing",
+          "Campaigns & broadcasts",
+        ],
+      },
+      {
+        category: "Banking software",
+        blurb: "Banking & lending software with AI-assisted workflows.",
+        long: "Banking and lending software for Indonesia — loan origination (LOS), appraisal, collections, treasury and KYC/CDD on one shared BPMN/DMN workflow engine, with AI-assisted credit analysis. Built for BPRs, multifinance and regional banks.",
+        points: [
+          "Loan origination (LOS) & management",
+          "Appraisal · collections · treasury · KYC",
+          "BPMN/DMN workflow engine",
+          "AI credit narrative (advisory)",
+        ],
+      },
+      {
+        category: "Secure access",
+        blurb: "Secure SSH access & encrypted credential vault.",
+        long: "Secure SSH access and a zero-knowledge, encrypted credential vault — browser and native terminals with SFTP, SSH key management, sync, SSO and host-key pinning. Built like an instrument, for DevOps and platform teams.",
+        points: [
+          "Browser + native SSH terminals",
+          "Zero-knowledge encrypted vault",
+          "SFTP & SSH key management",
+          "Sync · SSO · host-key pinning",
+        ],
+      },
+    ],
   },
   productsPage: {
     hero: {
@@ -383,6 +429,52 @@ const id: Dict = {
     titleAccent: "dikirim sebagai produk.",
     subtitle: "1nx membangun dan mengoperasikan keluarga produk dan layanan di atas satu mesin eksekusi.",
     tag: "Produk",
+    items: [
+      {
+        category: "Pembayaran",
+        blurb: "Orkestrasi pembayaran — satu integrasi, semua gateway.",
+        long: "Lapisan orkestrasi di atas payment gateway Indonesia. Integrasi sekali, terima semua metode — QRIS, virtual account, e-wallet, kartu, dan PayLater — dan rutekan antar penyedia demi uptime dan cakupan. Dana langsung masuk ke Anda.",
+        points: [
+          "Satu API, semua gateway",
+          "QRIS · VA · e-wallet · kartu · PayLater",
+          "Routing sadar-kesehatan & failover",
+          "Dana langsung masuk ke Anda",
+        ],
+      },
+      {
+        category: "Pesan & otomasi",
+        blurb: "Otomasi workflow + pesan omnichannel, berbasis AI.",
+        long: "Otomasi workflow dan pesan omnichannel berbasis AI. Orkestrasi percakapan pelanggan di WhatsApp, SMS, dan suara, dengan otomasi visual, kampanye, serta balasan dan routing berbantuan AI.",
+        points: [
+          "Omnichannel: WhatsApp · SMS · suara",
+          "Otomasi workflow visual",
+          "Balasan & routing berbantuan AI",
+          "Kampanye & broadcast",
+        ],
+      },
+      {
+        category: "Perangkat lunak perbankan",
+        blurb: "Perangkat lunak perbankan & lending dengan workflow berbantuan AI.",
+        long: "Perangkat lunak perbankan dan lending untuk Indonesia — loan origination (LOS), appraisal, collections, treasury, dan KYC/CDD di atas satu mesin workflow BPMN/DMN, dengan analisis kredit berbantuan AI. Dibuat untuk BPR, multifinance, dan bank daerah.",
+        points: [
+          "Loan origination (LOS) & manajemen",
+          "Appraisal · collections · treasury · KYC",
+          "Mesin workflow BPMN/DMN",
+          "Narasi kredit AI (advisory)",
+        ],
+      },
+      {
+        category: "Akses aman",
+        blurb: "Akses SSH aman & vault kredensial terenkripsi.",
+        long: "Akses SSH aman dan vault kredensial terenkripsi zero-knowledge — terminal browser dan native dengan SFTP, manajemen kunci SSH, sinkronisasi, SSO, dan host-key pinning. Dibuat seperti instrumen, untuk tim DevOps dan platform.",
+        points: [
+          "Terminal SSH browser + native",
+          "Vault terenkripsi zero-knowledge",
+          "SFTP & manajemen kunci SSH",
+          "Sinkronisasi · SSO · host-key pinning",
+        ],
+      },
+    ],
   },
   productsPage: {
     hero: {

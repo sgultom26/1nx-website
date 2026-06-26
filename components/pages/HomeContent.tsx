@@ -201,9 +201,9 @@ export default function HomeContent() {
             subtitle={t.family.subtitle}
           />
           <Stagger className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-            {FAMILY.map((f) => (
+            {FAMILY.map((f, i) => (
               <StaggerItem key={f.name}>
-                <ProductCard name={f.name} blurb={f.blurb} href={f.href} tag={t.family.tag} />
+                <ProductCard name={f.name} blurb={t.family.items[i].blurb} href={f.href} tag={t.family.tag} />
               </StaggerItem>
             ))}
           </Stagger>
