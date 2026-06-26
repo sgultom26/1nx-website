@@ -3,6 +3,10 @@
 Cinematic, bilingual (EN/ID) marketing site for **1nx** — AI-enabled solutions, digital
 transformation and automation for the enterprise. **One idea. N executions.**
 
+> **Continuing this project?** Read **[`docs/HANDOFF.md`](docs/HANDOFF.md)** first — full ops/deploy
+> state (Vercel from GitHub, domain, i18n, products, motion) + runbook. Design rationale in
+> `docs/superpowers/specs/`, build plan in `docs/superpowers/plans/`.
+
 ## Stack
 
 - Next.js 15 (App Router) · React 19 · TypeScript 5.7 (pinned) · Tailwind CSS v4
