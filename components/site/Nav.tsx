@@ -19,6 +19,7 @@ export default function Nav() {
 
   const links = [
     { label: t.nav.solutions, href: "/solutions" },
+    { label: t.nav.products, href: "/#products" },
     { label: t.nav.industries, href: "/industries" },
     { label: t.nav.company, href: "/company" },
   ];

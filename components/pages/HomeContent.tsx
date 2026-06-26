@@ -24,6 +24,7 @@ import HeroBurst from "@/components/graphics/HeroBurst";
 import OneToNFlow from "@/components/graphics/OneToNFlow";
 import ExecutionTimeline from "@/components/graphics/ExecutionTimeline";
 import ImpactCounters from "@/components/graphics/ImpactCounters";
+import ProductCard from "@/components/site/ProductCard";
 
 const PILLAR_ICONS = [Brain, Layers, Workflow, Building2];
 const CAP_ICONS = [Brain, Database, Cloud, Plug, ShieldCheck, PenTool];
@@ -189,8 +190,8 @@ export default function HomeContent() {
         </Container>
       </section>
 
-      {/* ===== FAMILY ===== */}
-      <section className="py-20 sm:py-28">
+      {/* ===== PRODUCTS & SERVICES ===== */}
+      <section id="products" className="scroll-mt-24 py-20 sm:py-28">
         <Container>
           <SectionHeader
             align="center"
@@ -202,19 +203,7 @@ export default function HomeContent() {
           <Stagger className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
             {FAMILY.map((f) => (
               <StaggerItem key={f.name}>
-                <a
-                  href={f.href}
-                  target={f.href.startsWith("http") ? "_blank" : undefined}
-                  rel="noopener"
-                  className="card card-hover group block h-full p-6"
-                >
-                  <div className="flex items-center justify-between">
-                    <span className="mono-label">{t.family.tag}</span>
-                    <ArrowUpRight size={15} className="text-faint transition-colors group-hover:text-fg" />
-                  </div>
-                  <div className="mt-4 font-display text-lg font-semibold text-fg">{f.name}</div>
-                  <p className="mt-2 text-[13px] leading-relaxed text-muted">{f.blurb}</p>
-                </a>
+                <ProductCard name={f.name} blurb={f.blurb} href={f.href} tag={t.family.tag} />
               </StaggerItem>
             ))}
           </Stagger>

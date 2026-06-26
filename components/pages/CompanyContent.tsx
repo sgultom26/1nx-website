@@ -1,10 +1,10 @@
 "use client";
 
-import { ArrowUpRight } from "lucide-react";
 import Container from "@/components/ui/Container";
 import Reveal, { Stagger, StaggerItem } from "@/components/ui/Reveal";
 import Eyebrow from "@/components/ui/Eyebrow";
 import SectionHeader from "@/components/ui/SectionHeader";
+import ProductCard from "@/components/site/ProductCard";
 import { useI18n } from "@/lib/i18n";
 import { FAMILY } from "@/lib/site";
 
@@ -89,19 +89,7 @@ export default function CompanyContent() {
           <Stagger className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
             {FAMILY.map((fam) => (
               <StaggerItem key={fam.name}>
-                <a
-                  href={fam.href}
-                  target={fam.href.startsWith("http") ? "_blank" : undefined}
-                  rel="noopener"
-                  className="card card-hover group block h-full p-6"
-                >
-                  <div className="flex items-center justify-between">
-                    <span className="mono-label">{t.family.tag}</span>
-                    <ArrowUpRight size={15} className="text-faint transition-colors group-hover:text-fg" />
-                  </div>
-                  <div className="mt-4 font-display text-lg font-semibold text-fg">{fam.name}</div>
-                  <p className="mt-2 text-[13px] leading-relaxed text-muted">{fam.blurb}</p>
-                </a>
+                <ProductCard name={fam.name} blurb={fam.blurb} href={fam.href} tag={t.family.tag} />
               </StaggerItem>
             ))}
           </Stagger>

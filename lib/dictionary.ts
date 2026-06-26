@@ -10,6 +10,7 @@ const en = {
   },
   nav: {
     solutions: "Solutions",
+    products: "Products",
     industries: "Industries",
     company: "Company",
   },
@@ -152,7 +153,7 @@ const en = {
         links: [
           { label: "1pay2link", href: "https://1pay2link.com" },
           { label: "1ncall", href: "https://1ncall.com" },
-          { label: "1nflow", href: "https://1nflow.com" },
+          { label: "1nflow", href: "https://1nflow.ai" },
           { label: "termssh", href: "https://termssh.com" },
         ],
       },
@@ -262,6 +263,7 @@ const id: Dict = {
   },
   nav: {
     solutions: "Solusi",
+    products: "Produk",
     industries: "Industri",
     company: "Perusahaan",
   },
@@ -403,7 +405,7 @@ const id: Dict = {
         links: [
           { label: "1pay2link", href: "https://1pay2link.com" },
           { label: "1ncall", href: "https://1ncall.com" },
-          { label: "1nflow", href: "https://1nflow.com" },
+          { label: "1nflow", href: "https://1nflow.ai" },
           { label: "termssh", href: "https://termssh.com" },
         ],
       },
