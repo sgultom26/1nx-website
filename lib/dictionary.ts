@@ -121,6 +121,17 @@ const en = {
     subtitle: "1nx builds and operates a family of products and services on one execution engine.",
     tag: "Product",
   },
+  productsPage: {
+    hero: {
+      eyebrow: "Products & services",
+      titleA: "Built by 1nx. ",
+      titleAccent: "Run by you.",
+      subcopy:
+        "A family of products and services on one execution engine — payments, messaging, banking software and secure access.",
+    },
+    capabilitiesLabel: "What it does",
+    visit: "Visit",
+  },
   cta: {
     titleA: "Bring us one idea. ",
     titleAccent: "We'll engineer the executions.",
@@ -372,6 +383,17 @@ const id: Dict = {
     titleAccent: "dikirim sebagai produk.",
     subtitle: "1nx membangun dan mengoperasikan keluarga produk dan layanan di atas satu mesin eksekusi.",
     tag: "Produk",
+  },
+  productsPage: {
+    hero: {
+      eyebrow: "Produk & layanan",
+      titleA: "Dibangun 1nx. ",
+      titleAccent: "Dijalankan Anda.",
+      subcopy:
+        "Keluarga produk dan layanan di atas satu mesin eksekusi — pembayaran, pesan, perangkat lunak perbankan, dan akses aman.",
+    },
+    capabilitiesLabel: "Yang dilakukannya",
+    visit: "Kunjungi",
   },
   cta: {
     titleA: "Bawa satu ide. ",
